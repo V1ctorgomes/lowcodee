@@ -150,18 +150,21 @@ initTechMarquee();
 const header = document.getElementById("header");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.getElementById("mobileNav");
+const mobileNavBackdrop = document.getElementById("mobileNavBackdrop");
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
 
-let scrollY = 0;
+const MENU_MS = prefersReducedMotion ? 0 : 480;
 
-function closeMobileMenu() {
-  if (!menuToggle || !mobileNav) return;
-  menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.classList.remove("is-open");
-  mobileNav.classList.remove("is-open");
-  mobileNav.setAttribute("aria-hidden", "true");
+let scrollY = 0;
+let menuCloseTimer = null;
+
+function isMenuOpen() {
+  return menuToggle?.getAttribute("aria-expanded") === "true";
+}
+
+function unlockPageScroll() {
   document.body.classList.remove("menu-open");
   document.body.style.position = "";
   document.body.style.top = "";
@@ -169,13 +172,44 @@ function closeMobileMenu() {
   window.scrollTo(0, scrollY);
 }
 
+function closeMobileMenu() {
+  if (!menuToggle || !mobileNav || !isMenuOpen()) return;
+
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.classList.remove("is-open");
+  header?.classList.remove("is-menu-open");
+  mobileNav.classList.remove("is-open");
+  mobileNav.setAttribute("aria-hidden", "true");
+  mobileNavBackdrop?.classList.remove("is-visible");
+  mobileNavBackdrop?.setAttribute("hidden", "");
+
+  clearTimeout(menuCloseTimer);
+
+  if (prefersReducedMotion) {
+    unlockPageScroll();
+    return;
+  }
+
+  menuCloseTimer = window.setTimeout(unlockPageScroll, MENU_MS);
+}
+
 function openMobileMenu() {
-  if (!menuToggle || !mobileNav) return;
+  if (!menuToggle || !mobileNav || isMenuOpen()) return;
+
+  clearTimeout(menuCloseTimer);
   scrollY = window.scrollY;
+
   menuToggle.setAttribute("aria-expanded", "true");
   menuToggle.classList.add("is-open");
-  mobileNav.classList.add("is-open");
+  header?.classList.add("is-menu-open");
   mobileNav.setAttribute("aria-hidden", "false");
+  mobileNavBackdrop?.removeAttribute("hidden");
+
+  requestAnimationFrame(() => {
+    mobileNav.classList.add("is-open");
+    mobileNavBackdrop?.classList.add("is-visible");
+  });
+
   document.body.classList.add("menu-open");
   document.body.style.position = "fixed";
   document.body.style.top = `-${scrollY}px`;
@@ -199,6 +233,8 @@ menuToggle?.addEventListener("click", () => {
 mobileNav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => closeMobileMenu());
 });
+
+mobileNavBackdrop?.addEventListener("click", () => closeMobileMenu());
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeMobileMenu();
