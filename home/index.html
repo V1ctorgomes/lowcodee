@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#030308" />
+    <title>Lowcodee | Soluções Digitais</title>
+    <meta
+      name="description"
+      content="Software house especializada em sites, e-commerce e sistemas sob medida com foco em performance e conversão."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=7" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/logo.PNG" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/logo.PNG" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a class="logo" href="/home">
+          <img class="logo-img" src="/assets/logo.PNG" alt="Lowcodee" width="36" height="36" />
+          <span class="logo-text">LOWCOD<span class="logo-accent">EE</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#processo">Processo</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a class="btn btn-outline header-cta" href="#contato">Solicitar proposta</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile" aria-hidden="true">
+        <a href="#servicos">Serviços</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#processo">Processo</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Software House
+            </p>
+            <h1>
+              Experiência e
+              <span class="gradient-text">confiança</span>
+              para seu negócio crescer no digital.
+            </h1>
+            <p class="hero-copy">
+              Criamos sites e sistemas sob medida com foco em performance,
+              usabilidade e resultado real para sua empresa.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contato">
+                Falar com especialista
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+            </div>
+            <ul class="stats">
+              <li class="reveal reveal-delay-1">
+                <strong>+12</strong><span>Projetos ativos</span>
+              </li>
+              <li class="reveal reveal-delay-2">
+                <strong>100%</strong><span>de satisfação</span>
+              </li>
+              <li class="reveal reveal-delay-3">
+                <strong>24h</strong><span>Suporte ágil</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-showcase reveal reveal-delay-2">
+            <div class="showcase-glow"></div>
+            <div class="showcase-floor" aria-hidden="true"></div>
+            <p class="preview-hint">Prévia do site da <strong id="previewHintBrand">sua empresa</strong></p>
+
+            <div class="phone" aria-label="Prévia do seu site no celular">
+              <div class="phone-frame">
+                <div class="phone-btn phone-btn-vol" aria-hidden="true"></div>
+                <div class="phone-btn phone-btn-power" aria-hidden="true"></div>
+
+                <div class="phone-screen-wrap">
+                  <div class="phone-island" aria-hidden="true">
+                    <span class="phone-island-cam"></span>
+                  </div>
+                  <div class="phone-glass" aria-hidden="true"></div>
+
+                  <div class="phone-screen preview-site">
+                    <div class="preview-status">
+                      <time>9:41</time>
+                      <div class="preview-status-icons" aria-hidden="true">
+                        <span class="icon-cell"></span>
+                        <span class="icon-wifi"></span>
+                        <span class="icon-battery"></span>
+                      </div>
+                    </div>
+
+                    <div class="preview-browser">
+                      <span class="preview-lock" aria-hidden="true"></span>
+                      <span class="preview-url" id="previewUrl">seunegocio.com.br</span>
+                    </div>
+
+                    <div class="preview-scroll">
+                      <div class="preview-body">
+                      <header class="preview-header">
+                        <span class="preview-logo-icon" id="previewLogoIcon">SE</span>
+                        <span class="preview-brand" id="previewBrand">Sua Empresa</span>
+                        <span class="preview-menu" aria-hidden="true"></span>
+                      </header>
+
+                      <nav class="preview-nav" aria-hidden="true">
+                        <span class="is-active">Início</span>
+                        <span>Serviços</span>
+                        <span>Contato</span>
+                      </nav>
+
+                      <section class="preview-hero">
+                        <div class="preview-hero-text">
+                          <span class="preview-eyebrow" id="previewEyebrow">Site profissional</span>
+                          <h2 class="preview-headline" id="previewHeadline">
+                            Sua marca em destaque no <em>digital</em>
+                          </h2>
+                          <p class="preview-sub" id="previewSub">
+                            Converta visitantes em clientes com um site rápido, moderno e sob medida.
+                          </p>
+                          <div class="preview-cta-row">
+                            <span class="preview-cta">Orçamento</span>
+                            <span class="preview-cta preview-cta--ghost">Portfólio</span>
+                          </div>
+                        </div>
+                        <div class="preview-hero-visual" aria-hidden="true">
+                          <div class="preview-visual-card">
+                            <span class="preview-visual-bar"></span>
+                            <span class="preview-visual-line"></span>
+                            <span class="preview-visual-line preview-visual-line--short"></span>
+                            <span class="preview-visual-btn"></span>
+                          </div>
+                        </div>
+                      </section>
+
+                      <div class="preview-trust" aria-hidden="true">
+                        <div class="preview-trust-item">
+                          <strong>4,9</strong>
+                          <small>Avaliação</small>
+                        </div>
+                        <div class="preview-trust-item">
+                          <strong>+50</strong>
+                          <small>Projetos</small>
+                        </div>
+                        <div class="preview-trust-item">
+                          <strong>24h</strong>
+                          <small>Resposta</small>
+                        </div>
+                      </div>
+
+                      <section class="preview-block">
+                        <p class="preview-label">O que oferecemos</p>
+                        <div class="preview-services">
+                          <article class="preview-service">
+                            <span class="preview-service-icon" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/></svg>
+                            </span>
+                            <small>Sites</small>
+                          </article>
+                          <article class="preview-service">
+                            <span class="preview-service-icon" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4v8z" stroke="currentColor" stroke-width="1.8"/></svg>
+                            </span>
+                            <small>Atendimento</small>
+                          </article>
+                          <article class="preview-service">
+                            <span class="preview-service-icon" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12L6 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="19" r="1.5" fill="currentColor"/><circle cx="17" cy="19" r="1.5" fill="currentColor"/></svg>
+                            </span>
+                            <small>E-commerce</small>
+                          </article>
+                          <article class="preview-service">
+                            <span class="preview-service-icon" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6zm4 4h8M8 14h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            </span>
+                            <small>Sistemas</small>
+                          </article>
+                        </div>
+                      </section>
+
+                      <section class="preview-block preview-quote-block">
+                        <p class="preview-label">Depoimento</p>
+                        <blockquote class="preview-quote-card">
+                          <div class="preview-stars" aria-hidden="true">★★★★★</div>
+                          <p class="preview-quote-text" id="previewQuote">
+                            "Entrega rápida, visual impecável e suporte de verdade."
+                          </p>
+                          <footer class="preview-quote-author">
+                            <span class="preview-quote-avatar" aria-hidden="true"></span>
+                            <div>
+                              <strong>Cliente parceiro</strong>
+                              <small id="previewQuoteMeta">Projeto entregue em 2025</small>
+                            </div>
+                          </footer>
+                        </blockquote>
+                      </section>
+                      </div>
+
+                      <footer class="preview-footer">
+                        <p class="preview-footer-line">
+                          <strong id="previewFooterBrand">Sua Empresa</strong>
+                          <span class="preview-footer-dot" aria-hidden="true">·</span>
+                          <span id="previewFooterEmail">contato@seunegocio.com.br</span>
+                        </p>
+                        <small class="preview-footer-copy">
+                          © 2026 <span id="previewFooterCopyBrand">Sua Empresa</span>
+                        </small>
+                      </footer>
+                    </div>
+
+                    <div class="preview-home-bar" aria-hidden="true"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands" aria-label="Tecnologias">
+        <div class="tech-marquee">
+          <div class="tech-track" id="techTrack">
+            <ul class="tech-list" data-tech-set>
+              <li class="tech-item tech-item--react">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.2" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" stroke-width="1.2"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" stroke-width="1.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" stroke-width="1.2" transform="rotate(120 12 12)"/></svg></span>
+                <span class="tech-name">React</span>
+              </li>
+              <li class="tech-item tech-item--next">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8.5 4.9v9.8L12 22.7 3.5 17.7V7.9L12 3z" stroke="currentColor" stroke-width="1.3"/></svg></span>
+                <span class="tech-name">Next.js</span>
+              </li>
+              <li class="tech-item tech-item--node">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l9 5.2v9.6L12 22 3 16.8V7.2L12 2z" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                <span class="tech-name">Node.js</span>
+              </li>
+              <li class="tech-item tech-item--ts">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.3"/><path d="M8 9v8M8 9h3.5a2.5 2.5 0 010 5H8" stroke="currentColor" stroke-width="1.3"/></svg></span>
+                <span class="tech-name">TypeScript</span>
+              </li>
+              <li class="tech-item tech-item--pg">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.2"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                <span class="tech-name">PostgreSQL</span>
+              </li>
+              <li class="tech-item tech-item--aws">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 16c4 2 12 2 16 0M6 12c3.5 1.5 8.5 1.5 12 0" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+                <span class="tech-name">AWS</span>
+              </li>
+              <li class="tech-item tech-item--tailwind">
+                <span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6c-2.5 0-4 1.2-4.5 3.6 1-1.4 2.2-1.9 3.6-1.7 1 .2 1.7.8 2.5 1.5 1.3 1.2 2.8 2.6 6.4 2.1C21 9.1 19.5 6 12 6z" fill="currentColor"/></svg></span>
+                <span class="tech-name">Tailwind</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="beneficios">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Diferenciais</p>
+            <h2>Por que escolher a <span class="gradient-text">Lowcodee</span></h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="glass-card reveal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4a4 4 0 100 8 4 4 0 000-8zM6 20v-1a6 6 0 0112 0v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Navegação intuitiva</h3>
+              <p>Interfaces claras para o usuário encontrar o que precisa rápido.</p>
+            </article>
+            <article class="glass-card reveal reveal-delay-1">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Carregamento rápido</h3>
+              <p>Páginas leves e otimizadas para melhor experiência e SEO.</p>
+            </article>
+            <article class="glass-card reveal reveal-delay-2">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>100% responsivo</h3>
+              <p>Layout perfeito em celular, tablet e desktop sem retrabalho.</p>
+            </article>
+            <article class="glass-card reveal reveal-delay-3">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 4v5c0 4.2-2.9 7.4-7 9-4.1-1.6-7-4.8-7-9V7l7-4z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Mais confiança</h3>
+              <p>Design profissional que fortalece a imagem da sua marca.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="servicos">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">O que fazemos</p>
+            <h2>Serviços para escalar seu negócio</h2>
+          </div>
+          <div class="service-grid">
+            <article class="glass-card service-card reveal">
+              <span class="service-num">01</span>
+              <h3>Sites institucionais</h3>
+              <p>Posicionamento digital forte para transformar visitantes em leads.</p>
+            </article>
+            <article class="glass-card service-card reveal reveal-delay-1">
+              <span class="service-num">02</span>
+              <h3>Lojas virtuais</h3>
+              <p>E-commerce rápido, seguro e preparado para escalar vendas.</p>
+            </article>
+            <article class="glass-card service-card reveal reveal-delay-2">
+              <span class="service-num">03</span>
+              <h3>Sistemas personalizados</h3>
+              <p>Automação de processos com ferramentas sob medida para sua operação.</p>
+            </article>
+            <article class="glass-card service-card reveal reveal-delay-3">
+              <span class="service-num">04</span>
+              <h3>Manutenção e suporte</h3>
+              <p>Acompanhamento contínuo para manter seu projeto sempre atualizado.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="processo">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Metodologia</p>
+            <h2>Nosso processo</h2>
+          </div>
+          <div class="process-grid">
+            <article class="glass-card process-card reveal">
+              <span class="step">01</span>
+              <h3>Imersão no negócio</h3>
+              <p>Entendemos seu mercado, desafios e metas para alinhar estratégia e tecnologia.</p>
+            </article>
+            <article class="glass-card process-card reveal reveal-delay-1">
+              <span class="step">02</span>
+              <h3>Protótipo e validação</h3>
+              <p>Desenhamos fluxos e layouts para validar com rapidez antes do desenvolvimento.</p>
+            </article>
+            <article class="glass-card process-card reveal reveal-delay-2">
+              <span class="step">03</span>
+              <h3>Desenvolvimento ágil</h3>
+              <p>Sprints curtas com entregas frequentes e total transparência do andamento.</p>
+            </article>
+            <article class="glass-card process-card reveal reveal-delay-3">
+              <span class="step">04</span>
+              <h3>Lançamento e evolução</h3>
+              <p>Publicamos, monitoramos e evoluímos continuamente com base em dados reais.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projetos">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Portfólio</p>
+            <h2>Projetos em destaque</h2>
+          </div>
+          <div class="project-grid">
+            <article class="glass-card project-card reveal">
+              <div class="project-shot project-shot--clinic" aria-hidden="true">
+                <div class="shot-chrome">
+                  <div class="shot-dots"><i></i><i></i><i></i></div>
+                  <div class="shot-address"><span class="shot-lock"></span>clinicavita.com.br</div>
+                </div>
+                <div class="shot-page shot-page--clinic">
+                  <header class="shot-topbar">
+                    <div class="shot-brand-block">
+                      <span class="shot-mark shot-mark--clinic"></span>
+                      <span class="shot-brand">Clínica Vita</span>
+                    </div>
+                    <nav class="shot-nav">
+                      <span class="is-active">Início</span><span>Especialidades</span><span>Convênios</span><span>Contato</span>
+                    </nav>
+                    <span class="shot-top-cta">Agendar consulta</span>
+                  </header>
+                  <section class="shot-hero-block">
+                    <div class="shot-hero-copy">
+                      <span class="shot-eyebrow">Medicina de confiança</span>
+                      <h4>Cuidado completo para você e sua família</h4>
+                      <p>Atendimento humanizado com equipe especializada.</p>
+                      <div class="shot-hero-actions">
+                        <span class="shot-btn shot-btn--primary">Marcar consulta</span>
+                        <span class="shot-btn shot-btn--ghost">Nossas unidades</span>
+                      </div>
+                    </div>
+                    <div class="shot-hero-media">
+                      <div class="shot-photo"></div>
+                    </div>
+                  </section>
+                  <section class="shot-features">
+                    <article><span class="shot-feat-icon">♥</span><b>Cardiologia</b><small>15+ especialistas</small></article>
+                    <article><span class="shot-feat-icon">+</span><b>Exames</b><small>Resultado em 24h</small></article>
+                    <article><span class="shot-feat-icon">★</span><b>4.9/5</b><small>2.400 avaliações</small></article>
+                  </section>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Site institucional</p>
+                <h3>Clínica Vita</h3>
+                <p>+63% em contatos qualificados nos primeiros 90 dias.</p>
+              </div>
+            </article>
+            <article class="glass-card project-card reveal reveal-delay-1">
+              <div class="project-shot project-shot--system" aria-hidden="true">
+                <div class="shot-app">
+                  <aside class="shot-sidebar">
+                    <div class="shot-app-brand">
+                      <span class="shot-mark shot-mark--log"></span>
+                      <span>Log Express</span>
+                    </div>
+                    <span class="shot-nav-item is-active">Dashboard</span>
+                    <span class="shot-nav-item">Entregas</span>
+                    <span class="shot-nav-item">Motoristas</span>
+                    <span class="shot-nav-item">Frota</span>
+                    <span class="shot-nav-item">Relatórios</span>
+                  </aside>
+                  <div class="shot-dashboard">
+                    <header class="shot-dash-header">
+                      <div>
+                        <small>Painel operacional</small>
+                        <strong>Visão geral — Hoje</strong>
+                      </div>
+                      <div class="shot-dash-user">
+                        <span class="shot-avatar"></span>
+                        <span>Admin</span>
+                      </div>
+                    </header>
+                    <div class="shot-kpis">
+                      <div class="shot-kpi"><small>Entregas</small><strong>248</strong><em>+12%</em></div>
+                      <div class="shot-kpi"><small>No prazo</small><strong>96%</strong><em>+3%</em></div>
+                      <div class="shot-kpi"><small>Tempo médio</small><strong>32m</strong><em>-8%</em></div>
+                    </div>
+                    <div class="shot-chart">
+                      <span style="--h: 55%"></span><span style="--h: 72%"></span><span style="--h: 48%"></span><span style="--h: 85%"></span><span style="--h: 65%"></span><span style="--h: 90%"></span>
+                    </div>
+                    <table class="shot-table">
+                      <tr><td>#1842</td><td>Centro → Zona Sul</td><td><i class="pill pill--warn">Em rota</i></td></tr>
+                      <tr><td>#1841</td><td>Guarulhos</td><td><i class="pill pill--ok">Entregue</i></td></tr>
+                      <tr><td>#1840</td><td>Osasco</td><td><i class="pill pill--ok">Entregue</i></td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Sistema interno</p>
+                <h3>Log Express</h3>
+                <p>35% menos tempo operacional com automação.</p>
+              </div>
+            </article>
+            <article class="glass-card project-card reveal reveal-delay-2">
+              <div class="project-shot project-shot--shop" aria-hidden="true">
+                <div class="shot-chrome">
+                  <div class="shot-dots"><i></i><i></i><i></i></div>
+                  <div class="shot-address"><span class="shot-lock"></span>casaurbana.com.br</div>
+                </div>
+                <div class="shot-page shot-page--shop">
+                  <header class="shot-topbar shot-topbar--shop">
+                    <div class="shot-brand-block">
+                      <span class="shot-mark shot-mark--shop"></span>
+                      <span class="shot-brand">Casa Urbana</span>
+                    </div>
+                    <div class="shot-search">Buscar móveis e decoração...</div>
+                    <div class="shot-cart-wrap">
+                      <span class="shot-cart-icon"></span>
+                      <span class="shot-cart-count">3</span>
+                    </div>
+                  </header>
+                  <section class="shot-promo">
+                    <div>
+                      <span class="shot-promo-tag">Coleção Outono 2026</span>
+                      <h4>Design que transforma ambientes</h4>
+                      <span class="shot-btn shot-btn--shop">Ver ofertas</span>
+                    </div>
+                  </section>
+                  <section class="shot-catalog">
+                    <article class="shot-product">
+                      <span class="shot-sale">-30%</span>
+                      <div class="shot-thumb shot-thumb--1"></div>
+                      <b>Luminária Oslo</b>
+                      <div class="shot-price"><s>R$ 269</s><strong>R$ 189</strong></div>
+                      <span class="shot-stars">★★★★★</span>
+                    </article>
+                    <article class="shot-product">
+                      <div class="shot-thumb shot-thumb--2"></div>
+                      <b>Poltrona Nordic</b>
+                      <div class="shot-price"><strong>R$ 1.249</strong></div>
+                      <span class="shot-stars">★★★★☆</span>
+                    </article>
+                    <article class="shot-product">
+                      <span class="shot-sale">Novo</span>
+                      <div class="shot-thumb shot-thumb--3"></div>
+                      <b>Tapete Luna</b>
+                      <div class="shot-price"><strong>R$ 329</strong></div>
+                      <span class="shot-stars">★★★★★</span>
+                    </article>
+                  </section>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">E-commerce</p>
+                <h3>Casa Urbana</h3>
+                <p>2,3x de crescimento no faturamento em 6 meses.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Depoimentos</p>
+            <h2>O que nossos clientes dizem</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="glass-card testimonial-card reveal">
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <p>
+                "A Lowcodee traduziu nossa ideia em um produto muito acima do esperado.
+                Atendimento rápido e técnico."
+              </p>
+              <div class="author">
+                <span class="avatar">AP</span>
+                <div>
+                  <strong>Ana Paula</strong>
+                  <span>Diretora Comercial</span>
+                </div>
+              </div>
+            </article>
+            <article class="glass-card testimonial-card reveal reveal-delay-1">
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <p>
+                "Hoje temos um sistema que realmente resolve nossa operação. Ganhamos
+                produtividade e controle em tempo real."
+              </p>
+              <div class="author">
+                <span class="avatar">RL</span>
+                <div>
+                  <strong>Rafael Lima</strong>
+                  <span>COO</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq-container">
+          <div class="section-head section-head--center reveal">
+            <p class="section-label">Dúvidas</p>
+            <h2>Perguntas frequentes</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details class="faq-item glass-card">
+              <summary>Quanto tempo leva para desenvolver um projeto?</summary>
+              <div class="faq-content">
+                <p>Depende da complexidade. Em geral, sites levam de 3 a 6 semanas e sistemas de 8 a 16 semanas.</p>
+              </div>
+            </details>
+            <details class="faq-item glass-card">
+              <summary>Vocês atendem projetos de qualquer tamanho?</summary>
+              <div class="faq-content">
+                <p>Sim. Trabalhamos desde landing pages de conversão até plataformas e sistemas completos.</p>
+              </div>
+            </details>
+            <details class="faq-item glass-card">
+              <summary>Depois da entrega eu fico sem suporte?</summary>
+              <div class="faq-content">
+                <p>Não. Temos planos de manutenção e suporte para evolução contínua e estabilidade.</p>
+              </div>
+            </details>
+            <details class="faq-item glass-card">
+              <summary>Qual o investimento para começar?</summary>
+              <div class="faq-content">
+                <p>Cada projeto é único. Após entender sua necessidade, enviamos uma proposta clara e sem surpresas.</p>
+              </div>
+            </details>
+            <details class="faq-item glass-card faq-item--desktop-only">
+              <summary>O site fica no meu domínio?</summary>
+              <div class="faq-content">
+                <p>Sim. O projeto é seu. Configuramos domínio, hospedagem e e-mails profissionais conforme a necessidade.</p>
+              </div>
+            </details>
+            <details class="faq-item glass-card faq-item--desktop-only">
+              <summary>Como funciona o pagamento?</summary>
+              <div class="faq-content">
+                <p>Trabalhamos por etapas com parcelas vinculadas às entregas, para você acompanhar o progresso com segurança.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contato">
+        <div class="container">
+          <div class="cta-box reveal">
+            <div class="cta-glow"></div>
+            <h2>Pronto para criar seu projeto sob medida?</h2>
+            <p>
+              Conversamos sobre sua ideia, definimos o melhor caminho e tiramos o
+              projeto do papel com velocidade.
+            </p>
+            <div class="cta-actions">
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://wa.me/5585998475755?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Lowcodee%20e%20tenho%20interesse%20em%20um%20projeto%20(site%2C%20sistema%20ou%20e-commerce).%20Pode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chamar no WhatsApp
+              </a>
+              <a class="btn btn-ghost" href="mailto:contatolowcodee@gmail.com">contatolowcodee@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="/home">
+            <img class="logo-img" src="/assets/logo.PNG" alt="" width="32" height="32" />
+            <span class="logo-text">LOWCOD<span class="logo-accent">EE</span></span>
+          </a>
+          <p>Soluções digitais sob medida para acelerar o crescimento da sua empresa.</p>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <p>contatolowcodee@gmail.com</p>
+          <p>(85) 99847-5755</p>
+        </div>
+        <div>
+          <h3>Localização</h3>
+          <p>Fortaleza — CE</p>
+          <p>Atendimento remoto para todo o Brasil</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Lowcodee. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5585998475755?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Lowcodee%20e%20tenho%20interesse%20em%20um%20projeto%20(site%2C%20sistema%20ou%20e-commerce).%20Pode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <script src="/main.js?v=6"></script>
+  </body>
+</html>
