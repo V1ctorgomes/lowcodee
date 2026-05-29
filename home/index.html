@@ -99,9 +99,10 @@
           <div class="hero-showcase reveal reveal-delay-2">
             <div class="showcase-glow"></div>
             <div class="showcase-floor" aria-hidden="true"></div>
-            <p class="preview-hint">Prévia do site da <strong id="previewHintBrand">sua empresa</strong></p>
+            <div class="phone-float">
+              <p class="preview-hint">Prévia do site da <strong id="previewHintBrand">sua empresa</strong></p>
 
-            <div class="phone" aria-label="Prévia do seu site no celular">
+              <div class="phone" aria-label="Prévia do seu site no celular">
               <div class="phone-frame">
                 <div class="phone-btn phone-btn-vol" aria-hidden="true"></div>
                 <div class="phone-btn phone-btn-power" aria-hidden="true"></div>
@@ -244,6 +245,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -407,28 +409,54 @@
                       <span class="shot-brand">Clínica Vita</span>
                     </div>
                     <nav class="shot-nav">
-                      <span class="is-active">Início</span><span>Especialidades</span><span>Convênios</span><span>Contato</span>
+                      <span class="is-active">Início</span><span>Especialidades</span><span>Exames</span><span>Convênios</span>
                     </nav>
-                    <span class="shot-top-cta">Agendar consulta</span>
+                    <span class="shot-top-phone">(85) 3456-7890</span>
+                    <span class="shot-top-cta">Agendar</span>
                   </header>
+                  <div class="shot-trust-bar">
+                    <span class="shot-trust-pill">Unimed</span>
+                    <span class="shot-trust-pill">Amil</span>
+                    <span class="shot-trust-pill">Bradesco Saúde</span>
+                    <span class="shot-trust-pill shot-trust-pill--accent">24h emergência</span>
+                  </div>
                   <section class="shot-hero-block">
                     <div class="shot-hero-copy">
-                      <span class="shot-eyebrow">Medicina de confiança</span>
-                      <h4>Cuidado completo para você e sua família</h4>
-                      <p>Atendimento humanizado com equipe especializada.</p>
+                      <span class="shot-eyebrow">Fortaleza · Aldeota</span>
+                      <h4>Saúde integral com acolhimento e excelência</h4>
+                      <p>Consultas, exames e acompanhamento em um só lugar.</p>
                       <div class="shot-hero-actions">
                         <span class="shot-btn shot-btn--primary">Marcar consulta</span>
-                        <span class="shot-btn shot-btn--ghost">Nossas unidades</span>
+                        <span class="shot-btn shot-btn--ghost">Resultado de exames</span>
+                      </div>
+                      <div class="shot-hero-stats">
+                        <span><b>4.9</b> Google</span>
+                        <span><b>12</b> especialidades</span>
                       </div>
                     </div>
                     <div class="shot-hero-media">
-                      <div class="shot-photo"></div>
+                      <div class="shot-photo">
+                        <span class="shot-photo-badge">Dra. Marina Silva</span>
+                      </div>
                     </div>
                   </section>
-                  <section class="shot-features">
-                    <article><span class="shot-feat-icon">♥</span><b>Cardiologia</b><small>15+ especialistas</small></article>
-                    <article><span class="shot-feat-icon">+</span><b>Exames</b><small>Resultado em 24h</small></article>
-                    <article><span class="shot-feat-icon">★</span><b>4.9/5</b><small>2.400 avaliações</small></article>
+                  <section class="shot-specialties">
+                    <article>
+                      <span class="shot-spec-icon shot-spec-icon--heart"></span>
+                      <div><b>Cardiologia</b><small>Ter · Qui</small></div>
+                    </article>
+                    <article>
+                      <span class="shot-spec-icon shot-spec-icon--lab"></span>
+                      <div><b>Laboratório</b><small>Coleta hoje</small></div>
+                    </article>
+                    <article>
+                      <span class="shot-spec-icon shot-spec-icon--child"></span>
+                      <div><b>Pediatria</b><small>Vagas amanhã</small></div>
+                    </article>
+                    <article>
+                      <span class="shot-spec-icon shot-spec-icon--dent"></span>
+                      <div><b>Odontologia</b><small>Clareamento</small></div>
+                    </article>
                   </section>
                 </div>
               </div>
@@ -446,36 +474,64 @@
                       <span class="shot-mark shot-mark--log"></span>
                       <span>Log Express</span>
                     </div>
-                    <span class="shot-nav-item is-active">Dashboard</span>
-                    <span class="shot-nav-item">Entregas</span>
-                    <span class="shot-nav-item">Motoristas</span>
-                    <span class="shot-nav-item">Frota</span>
-                    <span class="shot-nav-item">Relatórios</span>
+                    <span class="shot-nav-item is-active"><i class="shot-nav-dot"></i>Dashboard</span>
+                    <span class="shot-nav-item"><i class="shot-nav-dot"></i>Entregas <em class="shot-badge">18</em></span>
+                    <span class="shot-nav-item"><i class="shot-nav-dot"></i>Motoristas</span>
+                    <span class="shot-nav-item"><i class="shot-nav-dot"></i>Frota</span>
+                    <span class="shot-nav-item"><i class="shot-nav-dot"></i>Financeiro</span>
+                    <span class="shot-nav-item"><i class="shot-nav-dot"></i>Configurações</span>
                   </aside>
                   <div class="shot-dashboard">
                     <header class="shot-dash-header">
                       <div>
-                        <small>Painel operacional</small>
-                        <strong>Visão geral — Hoje</strong>
+                        <small>Operações · Fortaleza/CE</small>
+                        <strong>Dashboard — 28/05/2026</strong>
                       </div>
-                      <div class="shot-dash-user">
-                        <span class="shot-avatar"></span>
-                        <span>Admin</span>
+                      <div class="shot-dash-tools">
+                        <span class="shot-filter">Hoje ▾</span>
+                        <span class="shot-bell" aria-hidden="true"></span>
+                        <div class="shot-dash-user">
+                          <span class="shot-avatar"></span>
+                          <span>Rafael L.<small>Admin</small></span>
+                        </div>
                       </div>
                     </header>
-                    <div class="shot-kpis">
-                      <div class="shot-kpi"><small>Entregas</small><strong>248</strong><em>+12%</em></div>
-                      <div class="shot-kpi"><small>No prazo</small><strong>96%</strong><em>+3%</em></div>
-                      <div class="shot-kpi"><small>Tempo médio</small><strong>32m</strong><em>-8%</em></div>
+                    <div class="shot-kpis shot-kpis--4">
+                      <div class="shot-kpi"><small>Entregas hoje</small><strong>248</strong><em class="up">+12%</em></div>
+                      <div class="shot-kpi"><small>No prazo</small><strong>96%</strong><em class="up">+3%</em></div>
+                      <div class="shot-kpi"><small>Em rota agora</small><strong>34</strong><em class="neutral">ao vivo</em></div>
+                      <div class="shot-kpi"><small>Tempo médio</small><strong>32m</strong><em class="down">-8%</em></div>
                     </div>
-                    <div class="shot-chart">
-                      <span style="--h: 55%"></span><span style="--h: 72%"></span><span style="--h: 48%"></span><span style="--h: 85%"></span><span style="--h: 65%"></span><span style="--h: 90%"></span>
+                    <div class="shot-dash-panels">
+                      <div class="shot-chart-panel">
+                        <div class="shot-panel-head">
+                          <strong>Entregas por hora</strong>
+                          <span class="shot-legend"><i></i>Volume</span>
+                        </div>
+                        <div class="shot-chart">
+                          <span style="--h: 42%"></span><span style="--h: 58%"></span><span style="--h: 55%"></span><span style="--h: 72%"></span><span style="--h: 68%"></span><span style="--h: 85%"></span><span style="--h: 78%"></span><span style="--h: 90%"></span>
+                        </div>
+                        <div class="shot-chart-labels">
+                          <span>8h</span><span>10h</span><span>12h</span><span>14h</span><span>16h</span><span>18h</span>
+                        </div>
+                      </div>
+                      <div class="shot-table-panel">
+                        <div class="shot-panel-head">
+                          <strong>Entregas recentes</strong>
+                          <span class="shot-link">Ver todas</span>
+                        </div>
+                        <table class="shot-table">
+                          <thead>
+                            <tr><th>Pedido</th><th>Rota</th><th>Motorista</th><th>Status</th></tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>#1842</td><td>Centro → Aldeota</td><td><span class="shot-driver"><i></i>João M.</span></td><td><i class="pill pill--warn">Em rota</i></td></tr>
+                            <tr><td>#1841</td><td>Maranguape</td><td><span class="shot-driver"><i></i>Ana P.</span></td><td><i class="pill pill--ok">Entregue</i></td></tr>
+                            <tr><td>#1840</td><td>Aeroporto</td><td><span class="shot-driver"><i></i>Carlos S.</span></td><td><i class="pill pill--pend">Coleta</i></td></tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                    <table class="shot-table">
-                      <tr><td>#1842</td><td>Centro → Zona Sul</td><td><i class="pill pill--warn">Em rota</i></td></tr>
-                      <tr><td>#1841</td><td>Guarulhos</td><td><i class="pill pill--ok">Entregue</i></td></tr>
-                      <tr><td>#1840</td><td>Osasco</td><td><i class="pill pill--ok">Entregue</i></td></tr>
-                    </table>
                   </div>
                 </div>
               </div>
@@ -497,39 +553,58 @@
                       <span class="shot-mark shot-mark--shop"></span>
                       <span class="shot-brand">Casa Urbana</span>
                     </div>
-                    <div class="shot-search">Buscar móveis e decoração...</div>
+                    <div class="shot-search"><span class="shot-search-icon" aria-hidden="true"></span>Buscar móveis, luminárias...</div>
                     <div class="shot-cart-wrap">
                       <span class="shot-cart-icon"></span>
                       <span class="shot-cart-count">3</span>
                     </div>
                   </header>
-                  <section class="shot-promo">
-                    <div>
-                      <span class="shot-promo-tag">Coleção Outono 2026</span>
-                      <h4>Design que transforma ambientes</h4>
-                      <span class="shot-btn shot-btn--shop">Ver ofertas</span>
+                  <nav class="shot-categories" aria-hidden="true">
+                    <span class="is-active">Destaques</span>
+                    <span>Sofás</span>
+                    <span>Iluminação</span>
+                    <span>Decoração</span>
+                    <span>Outlet</span>
+                  </nav>
+                  <section class="shot-promo shot-promo--split">
+                    <div class="shot-promo-copy">
+                      <span class="shot-promo-tag">Frete grátis · Fortaleza</span>
+                      <h4>Até 40% na coleção Outono</h4>
+                      <p>Parcelamento em até 10x sem juros</p>
+                      <span class="shot-btn shot-btn--shop">Comprar agora</span>
                     </div>
+                    <div class="shot-promo-visual" aria-hidden="true"></div>
                   </section>
+                  <div class="shot-catalog-head">
+                    <strong>Mais vendidos</strong>
+                    <span>Ver catálogo →</span>
+                  </div>
                   <section class="shot-catalog">
                     <article class="shot-product">
                       <span class="shot-sale">-30%</span>
+                      <button class="shot-add" type="button" aria-hidden="true">+</button>
                       <div class="shot-thumb shot-thumb--1"></div>
-                      <b>Luminária Oslo</b>
+                      <b>Luminária Oslo LED</b>
                       <div class="shot-price"><s>R$ 269</s><strong>R$ 189</strong></div>
-                      <span class="shot-stars">★★★★★</span>
+                      <small class="shot-installment">10x R$ 18,90</small>
+                      <span class="shot-stars">★★★★★ <em>(128)</em></span>
                     </article>
                     <article class="shot-product">
+                      <button class="shot-add" type="button" aria-hidden="true">+</button>
                       <div class="shot-thumb shot-thumb--2"></div>
                       <b>Poltrona Nordic</b>
                       <div class="shot-price"><strong>R$ 1.249</strong></div>
-                      <span class="shot-stars">★★★★☆</span>
+                      <small class="shot-installment">10x R$ 124,90</small>
+                      <span class="shot-stars">★★★★☆ <em>(54)</em></span>
                     </article>
                     <article class="shot-product">
-                      <span class="shot-sale">Novo</span>
+                      <span class="shot-sale shot-sale--new">Novo</span>
+                      <button class="shot-add" type="button" aria-hidden="true">+</button>
                       <div class="shot-thumb shot-thumb--3"></div>
-                      <b>Tapete Luna</b>
+                      <b>Tapete Luna 2×1,5m</b>
                       <div class="shot-price"><strong>R$ 329</strong></div>
-                      <span class="shot-stars">★★★★★</span>
+                      <small class="shot-installment">ou R$ 312 à vista</small>
+                      <span class="shot-stars">★★★★★ <em>(31)</em></span>
                     </article>
                   </section>
                 </div>
