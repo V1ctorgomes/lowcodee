@@ -155,20 +155,21 @@ const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
 
-const MENU_MS = prefersReducedMotion ? 0 : 480;
-
 let scrollY = 0;
-let menuCloseTimer = null;
 
 function isMenuOpen() {
   return menuToggle?.getAttribute("aria-expanded") === "true";
 }
 
+function lockPageScroll() {
+  scrollY = window.scrollY;
+  document.body.classList.add("menu-open");
+  document.body.style.top = `-${scrollY}px`;
+}
+
 function unlockPageScroll() {
   document.body.classList.remove("menu-open");
-  document.body.style.position = "";
   document.body.style.top = "";
-  document.body.style.width = "";
   window.scrollTo(0, scrollY);
 }
 
@@ -181,39 +182,22 @@ function closeMobileMenu() {
   mobileNav.classList.remove("is-open");
   mobileNav.setAttribute("aria-hidden", "true");
   mobileNavBackdrop?.classList.remove("is-visible");
-  mobileNavBackdrop?.setAttribute("hidden", "");
-
-  clearTimeout(menuCloseTimer);
-
-  if (prefersReducedMotion) {
-    unlockPageScroll();
-    return;
-  }
-
-  menuCloseTimer = window.setTimeout(unlockPageScroll, MENU_MS);
+  mobileNavBackdrop?.setAttribute("aria-hidden", "true");
+  unlockPageScroll();
 }
 
 function openMobileMenu() {
   if (!menuToggle || !mobileNav || isMenuOpen()) return;
 
-  clearTimeout(menuCloseTimer);
-  scrollY = window.scrollY;
+  lockPageScroll();
 
   menuToggle.setAttribute("aria-expanded", "true");
   menuToggle.classList.add("is-open");
   header?.classList.add("is-menu-open");
+  mobileNav.classList.add("is-open");
   mobileNav.setAttribute("aria-hidden", "false");
-  mobileNavBackdrop?.removeAttribute("hidden");
-
-  requestAnimationFrame(() => {
-    mobileNav.classList.add("is-open");
-    mobileNavBackdrop?.classList.add("is-visible");
-  });
-
-  document.body.classList.add("menu-open");
-  document.body.style.position = "fixed";
-  document.body.style.top = `-${scrollY}px`;
-  document.body.style.width = "100%";
+  mobileNavBackdrop?.classList.add("is-visible");
+  mobileNavBackdrop?.setAttribute("aria-hidden", "false");
 }
 
 /* Header ao rolar */
